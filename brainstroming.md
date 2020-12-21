@@ -23,6 +23,6 @@
 
 相关图片/成果展示
 ----
-![image](https://github.com/SWJTU-i2e-2020/outdoor_travel_6/blob/main/D11DC218AE0A97C8E6DB4EE03A7CEAFE.png)
+![image](https://github.com/SWJTU-i2e-2020/outdoor_travel_6/blob/main/D11DC218AE0A97C8E6DB4EE03A7CEAFE.jpg)
 ![image]()
 ![image]()
