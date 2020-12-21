@@ -25,4 +25,4 @@
 ----
 ![image](https://github.com/SWJTU-i2e-2020/outdoor_travel_6/blob/main/D11DC218AE0A97C8E6DB4EE03A7CEAFE.jpg)
 ![image](https://github.com/SWJTU-i2e-2020/outdoor_travel_6/blob/main/AAF539C38C6AD7CF7EB01A0F267F9B7C.jpg)
-![image]()
+![image](https://github.com/SWJTU-i2e-2020/outdoor_travel_6/blob/main/0FB414F52DF6DF476038DC4A5BDABC4E.jpg)
