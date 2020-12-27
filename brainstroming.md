@@ -21,8 +21,19 @@
 
 6、总结
 
+观点总结
+----
+
+1、GPS模块:可实现通讯设备的经纬度定位以及两个通讯设备之间的距离测量，同时也可测量所处地区的海拔高度。
+
+2、时间模块：可现实时间信息。
+
+3、显示器模块:将所需信息显示在显示屏上。
+
+
 相关图片/成果展示
 ----
+
 ![image](https://github.com/SWJTU-i2e-2020/outdoor_travel_6/blob/main/D11DC218AE0A97C8E6DB4EE03A7CEAFE.jpg)
 ![image](https://github.com/SWJTU-i2e-2020/outdoor_travel_6/blob/main/AAF539C38C6AD7CF7EB01A0F267F9B7C.jpg)
 ![image](https://github.com/SWJTU-i2e-2020/outdoor_travel_6/blob/main/0FB414F52DF6DF476038DC4A5BDABC4E.jpg)
