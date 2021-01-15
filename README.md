@@ -1,78 +1,363 @@
 # 选题报告——户外旅行设备 
 
+## 成员
+游豪毅：
+邓仕荃：
+杨鑫：
+景荟洋：
+李丹：
+黄旭鹏：
 
 ## 1.问题定义 
 
-    对于户外旅行来说，所处的位置有时候没有实时的环境（温湿度、紫外线强 度，地理位置等）数据，或者有时候会遇到没有网络信号的问题。为了为户外旅行者更方便做决策，需要能获取当前的环境信息的设备。同时在遇到紧急情况以及危险时，可以快捷向外界求助，或对进入的危险区有一定预警。我们不仅需要获得环境的数据，还需要获得旅行者的身体状况数据和运动数据。设备可为用户提供一些数据，如运动量、运动轨迹、卡路里消耗、心率检测等。还可以综合考 虑环境和旅行者的身体状况，为旅行者提供数据参考并且可以分析后提供参考意 见。一方面可以让旅行者做出合理的决策、规划最优出行的时间；另一方面可以 保障安全，紧急情况可开启紧急模式。所以我们的设备应该可以将环境数据监测 和人体数据监测功能集成与一体 ，综合考虑稳定、轻便、长续航等特点，具有紧急模式特色的智能设备。  
-  
-    在分析了功能后，我们综合考虑后选择使用类似手环的产品模型，在这基础 上搭载我们的特别功能和需求。使用温湿度传感器、紫外光传感器、心率检测等 传感器实现对应功能。考虑使用触摸屏和各类元件。让旅行者更加了解自己的出 行运动数据和环境数据，让旅行变得更加充满趣味。   
+    对于户外旅行来说，所处的位置有时候没有实时的环境（温湿度、紫外线强度等）数据，或者有时候会遇到没有网络信号的问题。为了为户外旅行者更方便做决策，需要能获取当前的环境信息的设备。但我们不仅需要获得环境的数据，还需要获得旅行者的身体状况数据和运动数据。设备可为用户提供一些数据，如运动量、运动轨迹、卡路里消耗、心率检测等。还可以综合考虑环境和旅行者的身体状况，为旅行者提供数据参考并且可以分析后提供参考意见。一方面可以让旅行者做出合理的决策、规划最优出行的时间；另一方面可以保障安全，紧急情况可开启紧急模式。所以我们的设备应该可以将环境数据监测和人体数据监测功能集成与一体 ，综合考虑稳定、轻便、长续航等特点，具有紧急模式特色的智能设备 。
+  在分析了功能后，我们综合考虑后选择使用类似手环的产品模型，在这基础上搭载我们的特别功能和需求。使用温湿度传感器、紫外光传感器、心率检测等传感器实现对应功能。考虑使用触摸屏和各类元件。让旅行者更加了解自己的出行运动数据和环境数据，让旅行变得更加充满趣味。
+  对于户外旅行来说，所处的位置有时候没有实时的地理位置数据，经常有与队友走散，安全的风险。为了为户外旅行者更方便做决策，能获取当前的环境信息的设备显得十分重要。并且户外环境大多结伴而行，尤其在户外较为空旷的环境下，与队友走失的事情时有发生。有时候通讯设备联系时会遇到信号不好而无法联系，并且单纯使用语言等描述相对位置也十分困难。因此我们考虑开发一款专注于户外使用的手表，能够准确提供其他人的位置信息方位，并且可以在危机时刻上传呼救信号的手环。
+   
  
-## 2.市场调研 
+## 2.需求分析
 
-    根据中研产业研究院《2020-2025 年智能手环市场发展现状调查及供需格局 分析预测报告》显示，小米手环 5 将首次支持控制手机拍照，除此之外，还将 新增 5 种运动模式：瑜伽，椭圆机，划船机，跳绳和室内自行车，这也让其运 动模式总数增加至 11 个。且小米手环 5 将支持通过 SpO2(血氧饱和度)测量来 增强心率追踪，其它健康功能将包括月经周期跟踪等。 2019 年是全球可穿戴设备市场发生重要转变的一年，最直观的体现便是智 能手表的需求增长速度压过智能手环。以销售智能手表为主的苹果、华为、三星 出货量均实现三位数增长，分别为 121.7%、153.3%、148.8%。    
+    智能手环作为目前备受用户关注的科技产品，其拥有的强大功能正悄无声息地渗透和改变 人们的生活。其内置的电池可以坚持10天，振动马达非常实用，简约的设计风格也可以起到 饰品的装饰作用。 智能手环这种设计风格对于习惯佩戴首饰的用户而言，颇具有诱惑力。更重要的是，手环 的设计风格堪称百搭。而且，别看小小手环个头不大，其功能还是比较强大的，比如它可以 说是一款高档的计步器，具有普通计步器的一般计步，测量距离、卡路里、脂肪等功能，同 时还具有睡眠监测、高档防水、蓝牙4.0数据传输、疲劳提醒等特殊功能。智能手环是一种穿戴式智能设备。通过这款手环，用户可以记录日常生活中的锻炼、睡眠 、部分还有饮食等实时数据，并将这些数据与手机、平板、ipod touch同步，起到通过数据指 导健康生活的作用。
+  根据中研产业研究院《2020-2025年中国智能手环行业供需分析及发展前景研究报告》和调研机构IDC的数据显示，2019年第三季度全球可穿戴设备出货量共计8450万台，同比增长94.6%，创下单季度出货量的新纪录。华为，苹果，三星出货量增幅最大，均超过100%。
+    IDC估算，苹果公司上季度的可穿戴设备出货量为2950万台，高于2018年第三季度的1000万台。苹果仍然是世界上最大的可穿戴设备供应商，AirPods Pro的推出和Apple Watch 3代手表的低价销售让苹果保持领先地位。 
+  苹果的财报中并没有披露可穿戴设备的销售情况，因此应该强调，IDC的数据是第三方估算的的，但所有迹象都表明，Apple Watch和AirPods的销售非常好。 2019年第三季度，苹果“可穿戴设备、智能家居和其他配件”营收创纪录地达到65亿美元，较上年同期的42亿美元增长54%。在财报中，这个类别跟iPhone或iPad并行，除了Apple Watch、AirPods和Beats之外，这类别还包括了HomePod、Apple TV、iPod touch以及苹果品牌和其他配件等等。 
+  AirPods Pro在推出后应该销量不错(虽然苹果也从没公布过它的销量)，用户目前预定都需要明年1月才能发货，从侧面表明新耳机有多受欢迎。小米手环 5 将于 6 月 11 日发布，今天官方公布了新品的 7 大升级。小米手环5的定妆照，采用椭圆外形，2.5D弧面屏幕，色彩丰富，手环颜色多达8种之多。 这七大升级分别是：加大号动态彩屏、专业传感器升级、磁吸式充电、11 种专业运动模式、NFC 银联闪付、全新女性健康模式、远程遥控拍照。 
+  根据中研产业研究院《2020-2025年智能手环市场发展现状调查及供需格局分析预测报告》显示，小米手环 5 将首次支持控制手机拍照，除此之外，还将新增 5 种运动模式：瑜伽，椭圆机，划船机，跳绳和室内自行车，这也让其运动模式总数增加至 11 个。且小米手环 5 将支持通过 SpO2(血氧饱和度)测量来增强心率追踪，其它健康功能将包括月经周期跟踪等。 只有更大的屏幕，才能让每次抬手都更鲜活有趣;只有磁吸充电，才能让每一次充电都轻松快意;更少不了强大的NFC银联闪付、多项高精度传感器、11种专业运动模式及全新的女性健康模式。你以为这些升级就是全部了吗? 
+  小米手环5在外观、体验、功能等各方面都有了很大的提升，接下来最大的悬念就是价格了，预计依然保持200元内。小米旗下广受欢迎的产品“小米手环”系列在本季度出货量超过1000万部，该公司通过瞄准欧洲、中东和非洲(EMEA)地区的国家，得以大幅扩大其全球影响力。 智能手环是一种穿戴式智能设备。通过智能手环，用户可以记录日常生活中的锻炼、睡眠、部分还有饮食等实时数据，并将这些数据与手机、平板、ipod touch同步，起到通过数据指导健康生活的作用。 智能手环作为目前备受用户关注的科技产品，其拥有的强大功能正悄无声息地渗透和改变人们的生活。其内置的电池可以坚持10天以上，振动马达非常实用，简约的设计风格也可以起到饰品的装饰作用。 尽管面临一些挑战，但由于在中国的强劲表现，华为的出货量在全球排名第四。在中国，华为同比增长188%，成为中国市场增长最快的公司之一。在世界其他地区，华为同样保持了强劲的增长。 Fitbit位列前五，公司最新推出的可穿戴设备和手表虽然受到欢迎，但出货量仅增长0.5%，谷歌的收购让该品牌的未来充满了不确定性。
+  智能手环作为目前备受用户关注的科技产品，其拥有的强大功能正悄无声息地渗透和改变 人们的生活。其内置的电池可以坚持10天，振动马达非常实用，简约的设计风格也可以起到 饰品的装饰作用科技的进步会引领人们进入一个新的时代，智能手环将会开创下一个智能领域，其方便性为更多人所接受、使用。
     
-    而以销售智能手环为主的小米，全年出货量增幅仅为 78.80%，不仅远远落后于苹果等三大巨头， 甚至没有跑赢市场扩张速度，平均增幅为 89%。 智能手环是一种穿戴式智能设备。通过智能手环，用户可以记录日常生活中 的锻炼、睡眠、部分还有饮食等实时数据，并将这些数据与手机、平板、ipod touch 同步，起到通过数据指导健康生活的作用。 智能手环作为目前备受用户关注的科技产品，其拥有的强大功能正悄无声息 地渗透和改变人们的生活。其内置的电池可以坚持 10 天以上，振动马达非常实 用，简约的设计风格也可以起到饰品的装饰作用。 我国已具备发展智能制造的基础与条件。一是取得了一大批相关的基础研究 成果，掌握了长期制约我国产业发展的部分智能制造技术，如机器人技术、感知 技术、复杂制造系统、智能信息处理技术等。以新型传感器、智能控制系统、工 业机器人、自动化成套生产线为代表的智能制造装备产业体系初步形成。二是我 国制造业数字化具备一定的基础。近五年，中国工业企业在研发设计方面，应用 数字化工具普及率已经达到 54%，在规模以上的工业企业中，生产线上数控装备 比重已经达到 30%。  
-    
-    与此同时，智能制造业投资从 2014 年到 2018 年热度持续上升，且 2017-2019 年间投资金额均超 300 亿元。中国智能硬件市场发展迅速，2020 年市场规模预 计可达 10767.0 亿元。分析师认为，中国自 2015 年以来关于智能制造的规划及 政策让资本市场更加关注智能制造发展潜力，投资热度不断攀升。而“新冠疫情” 期间智能制造进一步展示发展实力，疫后行业将更受关注。智能制造行业也将逐 渐走向成熟，依托各类基础技术支撑及应用场景拓展，智能硬件必将成为消费重 要品类。而目前智能穿戴设备尚未有针对于户外旅游的定向研发，多用于日常运动， 记步等，属于普适范畴。我们的研究方向初步定位为专门针对户外旅游运动者的 可穿戴设备，初步考虑要综合户外旅游的特点，如野营时方向辨别，地图指引， 进入危险区域的自动定位报警，SOS 呼救功能，并且要求强大的蓄电能力；针对 用户本身，也希望有心电监测功能，温湿度采集并上传分析功能，在一些旅游景 点考虑设计自动识别讲解功能的手环，各大程度上宣传景点文化，也放便了游客 的使用和景区的管理与人员调配。    
-    
 
-## 3.团队介绍 
+## 3.概念设计 
 
-### 3.1 基本信息 
+### 3.1 设计理念
 
-### 3.2 多元化展示 
+以人为本，坚持体现个性化与精神情感是我们核心的设计理念。服务用户，真正站在用户角度思考问题，是我们的出发点。个性化与精神文化在设计中的体现是我们一直以来注重的细节与创新点。体现出手表的服务功能是设计户外手环的第一要务。我们在设计时考虑引入相对距离，相对方位等概念，让队友的位置更加具象化，有助于寻找与定位；同时我们开发了两个版本的手环，加入了海拔，所处位置经纬度显示，心率等数据心事，以及多种配色与设计方案，满足人们个性化的选择，满足了个性化与美观的需求。
 
-    景荟洋 游豪毅 黄旭鹏 李丹、杨鑫 邓仕筌 来自四川、重庆、江西、湖南、山西各地的小伙伴聚集在一起，来自不同地 区的有趣灵魂间的相互碰撞，想必一定会有思想的火花产生。 
-    
-    我们的团队中，有善于表达、乐于交流的杨鑫同学；有认真负责、勤于思考 的景荟洋同学；有默默付出、思维灵敏的邓仕筌同学；有精明能干、不屈不挠的 黄旭鹏同学；有机灵聪明，善于发现的李丹同学；当然也少不了带领大家迈向成 功，勇挑大梁，顶天立地的游豪毅同学。每为成员都有独特之处，大家的和而不同，是这个项目开展过程中的一抹绚丽的色彩。
+### 3.2 项目分析
 
-## 4.团队建设 
-
-### 4.1 团队目标
-
-   研究户外旅行时周围环境的温湿度检测，距离检测等相关装置。
-
-### 4.2 实施方案 
-
-   先确定研究的大概方案，通过对国内外相应产品的调研，判断我们具体的产品研究。
-   
-   通过查阅资料，对装置进行调试研究，户外测试来判断装置的可行性和适应性。前期分为两个队伍，一个队伍主要注重装置的代码编写，完善代码的逻 辑合理性；另外一个队伍进行装置的焊接与组装，两队同步进行，能极大地提高效率。之后将代码上传成功后在户外进行测试，进行环境温湿度检测时，换多个不同地点测试装置是否在各种环境下都能较准确地进行监测，如工地旁等灰尘干 扰较严重的地方，寝室等较温暖的地方，阴暗角落等湿气较重，温度较低的地方。 进行距离检测时，在不同的距离进行距离检测，在没有障碍物时进行多次检测， 如宽敞的马路上；在有障碍物时进行多次检测，如不同层教学楼，人员密集场所等。
-   
-### 4.3 团队合作
-
-   定期进行项目的进度讨论和方向研究，在项目制作过程中，会经常开展交流会来进行交流讨论学习，队友之间多进行沟通交流，遇到问题召集大家一起进行 讨论，共同解决。根据每个人的长处不同分配不同的任务，将每个人的优势发挥 到最大。培养团队成员之间的亲和力。一个具有团队精神的团队，能使每个团队 成员显示高涨的士气，有利于激发成员工作的主动性。定期的交流学习也有利于 成员的技能提升，发散成员的思维，使思维更加灵活，更具有创造性。 
-
-### 4.4 团队内部规则
-
-   没有规矩不成方圆，一个团队如果能形成战斗力必须建立健全的游戏规则，如岗位职责、权利的界定，团队成员沟通、交流方式的确立等。这些规则应能保证一个团队的正常运行，让团队每个成员的主动性、积极性和创造性发挥出来， 使整个团队充满活力。学会宽容。宽容是一种很高的品质：在一个团队内部，由 于每个团队成员的性格特征可能不同，考虑问题的出发点不同，难免会产生摩擦。但每个人都应该抱着一种“对事不对人”的态度去宽容别人对自己的批评，甚至是 不理解，而不能一味地去争执，许多东西需要时间去证明，争论没有任何意义。
+    我们团队经过前期的市场调查与分析，选择了学生群体作为手环开发的目标用户群体。针对对市场上现有手环进行总结分析，发现市面上流行的手环大致可以分为两类：一种是偏向于手机的功能定位，手表体积大，功能丰富，售价昂贵，在一些场景下可以完全替代手机的功能；另一种是倾向于局部监测仪，主要用于监测心率，步数等，同时可以简单的显示时间以体现传统手表的功能。根据我们的市场调研结果来看，并没有一款专门针对户外旅行的，并且价格低廉的手表。
+  我们的客户需求分析则展现了户外手表所需要的功能。我们的调查群体主要为大学生，根据问卷结果显示，大部分学生出行方式为结伴而行，即在户外常常是团队行动。这时候会经常面临团队走失的状况从而影响了整个团队的行程；而一旦发现小伙伴走失也是一件让人担忧的事情。因此我们计划开发出一款户外手环，上面可以显示出你和团队其他成员的距离以及所处方位，从而轻松确定队友的位置，让团队出行更加安全便捷。另外我们还考虑设计了“超范围报警器”，用户们可以自己设定报警器的报警范围，一旦有同伴超过了报警范围，手表将会发出蜂鸣声，来提示队友可能已经超出团队活动范围，规避走失或遇到危险的情况。
 
 
+## 4.详细设计
 
-## 5.概念设计
-
-### 5.1 可代替的概念
-### 5.2 概念评估
-### 5.3 概念选择
-#### 1.功能设计
-  满足需求的各项要求，能较准确地确定设备的位置，同时显示两个通讯设备之间的相对方向和距离。
-#### 2.原理设计
-  先将产品分成不同的模块，分别实现各个模块的功能，再将各个模块联系起来，使用Arduino写好代码后上传进行测试，将数据显示再液晶显示屏上。
-#### 3.外观设计
-  在满足用户需求的基础上，提倡采用绿色环保的设计材料，尽可能少的使用材料进行封装，同时又能做到美观。
-
-## 6.详细设计
-
-### 6.1 物料清单
+### 4.1 物料清单
   2个lcd显示屏1602，2个GPS模块
-### 6.1 主要功能和运作原理
-### 6.3 分析、实验和建模
-### 6.4 加工过程制造
 
-## 7 性能指标
+### 4.2 主要功能与运行原理
 
-## 8 代码
+   A，B两个各自从北斗卫星（GPS模块）接受各自的地理信息，同时A，B之间相互通信，将自己的地理信息传输给对方(esp32-s模块，lora模块)，通过处理A，B两个的信息，算出两个的相对位置，并显示出来（oled0.91模块）
 
-## 9 代码如何运行
+### 4.3 代码 
+
+  #include "U8glib.h"
+#include <TinyGPS++.h>
+#include <SoftwareSerial.h>
+//如下是gps接受信息模块
+TinyGPSPlus gps;
+SoftwareSerial ss(4,3);//rx,tx
+
+float latitude0;
+float longitude0;
+float latitude1;
+float longitude1;
+
+float distance;//两者之间的相对距离
+void setup()
+  {
+    Serial.begin(9600); //set the baud rate of serial port to 9600;
+    ss.begin(9600); //set the GPS baud rate to 9600;
+  }
+void initial(){
+  latitude=0;longitude=0;}
+
+void loop()
+  {
+   initial();
+    while (ss.available() > 0)
+      {
+        gps.encode(ss.read()); //The encode() method encodes the string in the encoding format specified by encoding.
+        
+        if (gps.location.isUpdated())
+          {
+            latitude = gps.location.lat(); //gps.location.lat() can export latitude
+            longitude = gps.location.lng();//gps.location.lng() can export latitude
+            Serial.print("Latitude=");
+            Serial.print(latitude, 6);  //Stable after the fifth position
+            Serial.print(" Longitude=");
+            Serial.println(longitude, 6);
+            delay(500);
+          }
+        else{Serial.print("no data");}
+      }
+  }
+//wifi通信模块。
+#include <LoRaNow.h>
+#include <WiFi.h>
+#include <WebServer.h>
+#include <StreamString.h>
+#include <PubSubClient.h>
+//vspi
+#define MISO 19
+#define MOSI 23
+#define SCK 18
+#define SS 5
+
+//hspi
+//#define SCK 14
+//#define MISO 12
+//#define MOSI 13
+//#define SS 15
+
+#define DIO0 4
+
+const char *ssid = "MERCURY_E8A6 ";
+const char *password = "yangxin115";
+
+const char* mqtt_server = "broker.hivemq.com";
+
+WebServer server(80);
+WiFiClient espClient;
+PubSubClient mqttclient(espClient);
+
+const char *script = "<script>function loop() {var resp = GET_NOW('loranow'); var area = document.getElementById('area').value; document.getElementById('area').value = area + resp; setTimeout('loop()', 1000);} function GET_NOW(get) { var xmlhttp; if (window.XMLHttpRequest) xmlhttp = new XMLHttpRequest(); else xmlhttp = new ActiveXObject('Microsoft.XMLHTTP'); xmlhttp.open('GET', get, false); xmlhttp.send(); return xmlhttp.responseText; }</script>";
+
+unsigned long lastMsg = 0;
+#define MSG_BUFFER_SIZE  (60)
+char msg[MSG_BUFFER_SIZE];
+
+int value = 0;
+
+void handleRoot()
+{
+  String str = "";
+  str += "<html>";
+  str += "<head>";
+  str += "<title>ESP32 - LoRaNow</title>";
+  str += "<meta name='viewport' content='width=device-width, initial-scale=1'>";
+  str += script;
+  str += "</head>";
+  str += "<body onload='loop()'>";
+  str += "<center>";
+  str += "<textarea id='area' style='width:800px; height:400px;'></textarea>";
+  str += "</center>";
+  str += "</body>";
+  str += "</html>";
+  server.send(200, "text/html", str);
+}
+
+static StreamString string;
+
+void handleLoRaNow()
+{
+  server.send(200, "text/plain", string);
+  while (string.available()) // clear
+  {
+    string.read();
+  }
+}
+
+void callback(char* topic, byte* payload, unsigned int length) {
+  Serial.print("Message arrived [");
+  Serial.print(topic);
+  Serial.print("] ");
+  for (int i = 0; i < length; i++) {
+    Serial.print((char)payload[i]);
+  }
+  Serial.println();
+
+  // Switch on the LED if an 1 was received as first character
+  if ((char)payload[0] == '1') {
+    //digitalWrite(BUILTIN_LED, LOW);   // Turn the LED on (Note that LOW is the voltage level
+    // but actually the LED is on; this is because
+    // it is active low on the ESP-01)
+  } else {
+    //digitalWrite(BUILTIN_LED, HIGH);  // Turn the LED off by making the voltage HIGH
+  }
+
+}
+
+void setup(void)
+{
+
+  Serial.begin(115200);
+
+  WiFi.mode(WIFI_STA);
+  if (ssid != "")
+    WiFi.begin(ssid, password);
+  WiFi.begin();
+  Serial.println("");
+
+  // Wait for connection
+  while (WiFi.status() != WL_CONNECTED)
+  {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("");
+  Serial.print("Connected to ");
+  Serial.println(ssid);
+  Serial.print("IP address: ");
+  Serial.println(WiFi.localIP());
+
+  server.on("/", handleRoot);
+  server.on("/loranow", handleLoRaNow);
+  server.begin();
+  Serial.println("HTTP server started");
+
+  LoRaNow.setFrequencyCN(); // Select the frequency 486.5 MHz - Used in China
+  // LoRaNow.setFrequencyEU(); // Select the frequency 868.3 MHz - Used in Europe
+  // LoRaNow.setFrequencyUS(); // Select the frequency 904.1 MHz - Used in USA, Canada and South America
+  // LoRaNow.setFrequencyAU(); // Select the frequency 917.0 MHz - Used in Australia, Brazil and Chile
+
+  // LoRaNow.setFrequency(frequency);
+  // LoRaNow.setSpreadingFactor(sf);
+  // LoRaNow.setPins(ss, dio0);
+
+  LoRaNow.setPinsSPI(SCK, MISO, MOSI, SS, DIO0); // Only works with ESP32
+
+  if (!LoRaNow.begin())
+  {
+    Serial.println("LoRa init failed. Check your connections.");
+    while (true)
+      ;
+  }
+
+  LoRaNow.onMessage(onMessage);
+  LoRaNow.gateway();
+  //mqtt
+  mqttclient.setServer(mqtt_server, 1883);
+  mqttclient.setCallback(callback);
+
+}
+
+void loop(void)
+{
+  LoRaNow.loop();
+  server.handleClient();
+  mqttloop();
+}
+
+void onMessage(uint8_t *buffer, size_t size)
+{
+  unsigned long id = LoRaNow.id();
+  byte count = LoRaNow.count();
+
+  Serial.print("Node Id: ");
+  Serial.println(id, HEX);
+  Serial.print("Count: ");
+  Serial.println(count);
+  Serial.print("Message: ");
+  Serial.write(buffer, size);
+  Serial.println();
+  Serial.println();
+  
+   //此处通过mqtt发送信息。
+   snprintf (msg, MSG_BUFFER_SIZE, "#%ld#%s", count,buffer);
+   Serial.print("Publish message: ");
+   Serial.println(msg);
+   mqttclient.publish("C2TLOutTopic", msg);
+
+  if (string.available() > 512)
+  {
+    while (string.available())
+    {
+      string.read();
+    }
+  }
+
+  string.print("Node Id: ");
+  string.println(id, HEX);
+  string.print("Count: ");
+  string.println(count);
+  string.print("Message: ");
+  string.write(buffer, size);
+  string.println();
+  string.println();
+
+  // Send data to the node
+  LoRaNow.clear();
+  LoRaNow.print("LoRaNow Gateway Message ");
+  LoRaNow.print(millis());
+  LoRaNow.send();
+}
+
+void reconnect() {
+  // Loop until we're reconnected
+  while (!mqttclient.connected()) {
+    Serial.print("Attempting MQTT connection...");
+    // Create a random mqttclient ID
+    String clientId = "ESP8266Client-";
+    clientId += String(random(0xffff), HEX);
+    // Attempt to connect
+    if (mqttclient.connect(clientId.c_str())) {
+      Serial.println("connected");
+      // Once connected, publish an announcement...
+      mqttclient.publish("C2TLOutTopic", "hello world");
+      // ... and resubscribe
+      mqttclient.subscribe("C2TLInTopic");
+    } else {
+      Serial.print("failed, rc=");
+      Serial.print(mqttclient.state());
+      Serial.println(" try again in 5 seconds");
+      // Wait 5 seconds before retrying
+      delay(5000);
+    }
+  }
+}
+
+void mqttloop() {
+
+  if (!mqttclient.connected()) {
+    reconnect();
+  }
+  mqttclient.loop();
+
+//  unsigned long now = millis();
+//  if (now - lastMsg > 2000) {
+//    lastMsg = now;
+//    ++value;
+//    snprintf (msg, MSG_BUFFER_SIZE, "hello world #%ld", value);
+//    Serial.print("Publish message: ");
+//    Serial.println(msg);
+//    mqttclient.publish("C2TLOutTopic", msg);
+//  }
+}
+//求两者之间的相对距离
+float dist(float latitude0,float latitude1,float longitude0,float longitude1 ){
+distance=6371.0*(sin(latitude0)*sin(latitude1)+cos(latitude0)*cos(latitude1)*cos(longitude1-longitude0));return distance;}
+//oled显示模块
+U8GLIB_SSD1306_128X64 u8g(U8G_I2C_OPT_NONE|U8G_I2C_OPT_DEV_0);      // I2C / TWI
+ void draw(void) {
+// graphic commands to redraw the complete screen should be placed here
+ u8g.setFont(u8g_font_unifont);
+//u8g.setFont(u8g_font_osb21);
+ u8g.drawStr( 0, 22, "Hello World!");
+ }
+ void setup(void) {
+ }
+ void loop(void) {
+ // picture loop
+ u8g.firstPage();
+do {
+ draw();
+ } while( u8g.nextPage() );
+ // rebuild the picture after some delay
+ delay(50);
+ }
+
+   
+## 5 性能指标
+
+
+
+## 6  学习体会
+
+  在21世纪的社会里，智能化将是一切生产和生活的必然趋势。我们正沿着信息高速公路迈向智能化社会的入口，而当前的信息革命是我们步入智能社会的必要前提。互联网、物联网和云计算等现代信息技术在社会生产各领域的广泛应用则加速了智能化化会的到来。智能社会的基本特征是生产智能化，生活智能化，具体表现就是智能机器大生产代替工业革命式的机器大生产，智能产品代替传统的工业产品，由此而引起一系列社会生活和狂会关系的深刻变生。人类社会将从工业文明时代跨入智能文明时代，在这个智能文明时代，智能机器不仅仅像传统机器那样是＂手＂的＂延伸＂，是＂体力＂的＂放大＂，而且还是＂脑＂的＂延伸＂，是＂智力＂的＂放大＂。智能社会将最大可能地实现物质财富的极大丰富，进一步解放人类的体力和脑为，使人类有更多的时间和精为来发展人类社会更高层次的文明。
+    在智能化枉会中，智能产品将为人们的生活带来质的改变。而在诸多的智能产品中，首先走入人们视线的是那些最贴近人们生活的智能产品，如智能穿戴产品。智能穿戴产品是指能穿戴在身上或在概念上作为衣帽服饰的一部分而其本身又是具有一定智能功能的独立产品，智能穿戴产品是通过软件支持及数据交互、云端交互来实现生活智能化的一种现代化产品。即便我们现在的社会信息化程度相当发达，但离智能化社会还有一段距离。在从信息化向智能化社会迈进的过程中，首先走入人们生活的智能穿戴产品在智能化社会历史进程中起着启蒙和引导的作用。智能手环便是这诸多己经成型或即将成型的智能穿戴产品中的一种，智能手环在智能社会到来之前进入人们的生活中，开启人们对未来智能社会的想象空间，促进人们对智能化生产和生活的探索，穷实人们对智能社会的信也。因此，智能手环如同其它智能穿戴产品一样，在智能化社会的历史进程中起着启蒙和引导的作用。
+  在这次的项目制作过程中，要感谢每个小组成员的辛勤付出，纵然作品没有达到想象的那样，但就过程而言我们收获到很多，去学习小组怎么去分工，怎么去合作，并体会到学习的快乐。
+
 
 
 
